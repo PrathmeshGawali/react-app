@@ -1,0 +1,221 @@
+@media (max-width : 700px){
+    .root{
+        width: 100%;
+        height: 100%;
+    }
+    .App {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+      }
+      .App .footer img {
+        width: 41rem;
+        height: 10rem;
+        background-color: black;
+      }
+      .header{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        width: 41rem;
+        outline: none;
+        border:none;
+        background-image: url("C:\Users\prath\OneDrive\Desktop\Web\AHEN_react\react-app\public\images\topo_bg.jpg");
+        top: 0;
+        left: 0;
+        height:100px;
+      }
+      .headercontent{
+        margin-left: 50px;
+        visibility: visible;
+        right: 30px;
+        font-size: 22px;
+        padding:1.5rem;
+        color: white;
+        list-style: none;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        align-items: start;
+        display: flex;
+
+        transition: 1s ease;
+      }
+      .menu_png{
+        width: auto;
+        outline: none;
+        border: none;
+        outline: none;
+        border: none ;
+        visibility: visible;
+        background: transparent;
+        padding-right: 10px;
+        margin-left: -1rem;
+        padding-left: 0px;
+        text-decoration: none;
+        position: relative;
+        justify-content: flex-end;
+        color: rgb(212, 212, 212);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .TwoButtons{
+        top: 68vh;
+        left: 0;
+        padding-top: -50px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 41rem;
+        height: 520px;
+        background-image: url("C:\Users\prath\OneDrive\Desktop\Web\AHEN_react_1\react-app\public\images\topo_bg.jpg");
+        align-items: center;
+        padding-left: 0%;
+        padding-top: 100px;
+        position: relative;
+        z-index: 3;
+      }
+      .wrapperdiv{
+        position: absolute;
+        left: 0;
+        top: 200px;
+        width: 41rem;
+        height: 90px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      .book_licence{
+        align-items: center;  
+        width: 200px;
+        height: 75px;
+        padding-left: 7px;
+        font-size: medium;
+        color: white;
+        background-color: white;
+        border-color: rgb(73, 72, 72);
+        border-radius: 20px;
+        width: 200px;
+        border: 6px solid gray;
+        height: 110px;
+        margin: 50px;
+        margin-top: 50px;
+        border-radius: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .session{
+        align-items: center; 
+        padding-left: 20px; 
+        width: 200px;
+        height: 75px;
+        font-size: medium;
+        color: white;
+        background-color: white;
+        border-color: rgb(73, 72, 72);
+        border-radius: 20px;
+        width: 200px;
+        border: 5px solid gray;
+        height: 110px;
+        text-decoration: underline;
+        margin: 130px;
+        padding-top: -50px;
+        border-radius: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .container{
+        width:41rem;
+        height: 100%;
+      }
+      .notebook{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        color: rgb(196, 38, 191);
+        background:none;
+        margin-top: 50px;
+        width: 41rem;
+        height: 700px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        backdrop-filter: blur(20px);
+        align-self: center;
+        display: flex;
+        overflow: hidden;
+      }
+      .card{
+        background-color: white;
+        width: 650px;
+        justify-self: center;
+        justify-content: space-between;
+        height: 400px;
+        position: relative;
+        align-self: center;
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 0  0 40px rgba(0,0,0,0.9);
+        border: 3px solid red;
+      }
+      .card .title input{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 150px;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 200px;
+        margin-top: -25px;
+        top: 15px;
+        background: none;
+        font-size: 20px;
+      
+        border: none;
+        outline: none;
+        color: white;
+        accent-color: rgb(255, 255, 255);
+      }
+      .image{
+        position: absolute;
+        align-items: center;
+        margin-left: 460px;
+        top: 40px;
+        margin-top: 30px;
+      }
+      .ulelements{
+        padding: 30px;
+      }
+      .footer_sign img{
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        left: 0;
+        margin-top: 150px;
+        background-color: black;
+      }
+      .wrapper_session_div{
+        width: 100%;
+        height: 700px;
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+      .carousel{
+        padding-right: 100px;
+        width: 41 rem;
+      }
+
+}
+@media (max-width : 400px){
+  .recomendation{
+    color: white;
+    text-shadow: 10px 10px 10px rgb(0,0,0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 30%;
+    margin-left: 400px;
+    visibility: visible;
+  }
+  
+}

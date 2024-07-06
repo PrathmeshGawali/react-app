@@ -1,5 +1,11 @@
+body{
+  background-color: black;
+}
 .App {
+  height: 100%;
+  width: 100%;
   text-align: center;
+
 }
 
 .App-logo {
@@ -34,5 +40,288 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.App > video {
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wallpaper{
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35%;
+  margin-top: 5%;
+  background: transparent;
+  border: 2px sold rgba(255, 255, 255,0.5);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  transition: height 0.2s ease;
+  overflow: hidden;
+}
+.wrapper,.login{
+  padding: 40px;
+}
+.wrapper .close_icon{
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 45px;
+  height:45px;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 2px solid rgba(255, 255, 255,0.5);
+  box-shadow: 0  0 30px rgba(0,0,0,0.5);
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 0px 20px 0px 20px;
+  overflow: hidden;
+  background-color: rgb(196, 38, 191);
+  backdrop-filter: blur(20px);
+
+}
+.wrapper .active{
+  height: 520px;
+}
+.wrapper .login{
+  transition: transform .18s ease;
+  transform: translateX(0);
+  /*display: none;*/
+}
+.wrapper.active .login{
+  transition: none;
+  transform: translateX(-400px);
+}
+.wrapper .register{
+  position: absolute;
+  transform: translateX(400px);
+}
+.wrapper.active .register{
+  transition: transform .18s ease ;
+  transform: translateX(-400px);
+}
+.login h2{
+  font-size: 2em;
+  color:rgb(196, 38, 191) ;
+  text-align: center;
+}
+.inputbox{
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid rgb(196, 38, 191);
+  margin: 30px 0;
+}
+.inputbox label {
+  position: absolute;
+  top: 100;
+  left: 40px;
+  transform: translateY(-170%);
+  font-size: 1em;
+  color:rgb(196, 38, 191) ;
+  font-weight: 500;
+
+  pointer-events: none;
+  transition: -0.5s;
+}
+.inputbox input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 35px 0 5px ;
+}
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+top: -100px;
+}
+
+.inputbox .icon {
+  position: absolute;
+  bottom: 25;
+  right: 40px;
+  padding: top;
+  font-size: 1.2em;
+  color:rgb(196, 38, 191) ;
+  line-height: 57px;
+}
+.remember_forgot{
+  font-size: 0.9em;
+  color:rgb(196, 38, 191);
+  font-weight: 500;
+  margin: -15px 0 15px; 
+  display: flex;
+  justify-content: space-between;
+}
+.remember_forgot label input{
+  accent-color: rgb(196,38,191);
+  margin-right: 3px;
+}
+.remember_forgot a{
+  text-decoration: none;
+  padding-top: 3px;
+  outline: none;
+  border: none;
+  color: rgb(58, 58, 237);
+}
+.remember_forgot a:hover{
+  text-decoration: underline;
+  color: rgb(29, 4, 92);
+}
+.btn{
+  width: 100%;
+  height: 45px;
+  background-color: rgb(196, 38, 191);
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+  align-self: center;
+  color: #ffffff;
+  font-size: larger;
+  text-align: center;  
+}
+.btn:hover{
+  background: transparent;
+  color:rgb(196, 38, 191) ;
+}
+.login_register{
+  
+  color:rgb(196, 38, 191) ;
+  text-align: center;
+  justify-content: space-between;
+  font-weight: 200;
+  text-decoration: none;
+}
+.login_register a{
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: rgb(58, 58, 237);
+}
+.login_register a:hover{
+  text-decoration: underline;
+  color: rgb(29, 4, 92);
+ 
+}
+.footer_c{
+  margin-top: 100px;
+}
+.footer img{
+
+  width: 100%;
+  height: 50%;
+  background-color: black;
+}
+.footer_c img{
+
+  width: 100%;
+  height: 50%;
+  background-color: black;
+}
+.google{
+  width: 100%;
+  height: 45px;
+  background-color: rgba(239, 117, 137, 0.721);
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+  align-self: center;
+  color: #ffffff;
+  font-size: larger;
+  text-align: center;  
+  backdrop-filter: blur(20px);
+  }
+.sml_img{
+  width: 40px;
+  height: 40px;
+
+  padding-left: -10px;
+}
+.slider{
+  border-radius: 20px;
+  padding: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.428);
+  background-image: url("C:\Users\prath\OneDrive\Desktop\Web\AHEN_react\react-app\public\images\topo_bg.jpg");
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.slider_a{
+  border-radius: 20px;
+  width: 85%;
+  height: 90%;
+  background-color: black;
+  transition: 0.5s ease;
+}
+.slider_a:hover{
+  width: 88%;
+  height: 94%;
+}
+.slider_a img{
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.slider_p{
+  font-size: 50px;
+  color: white;
+  z-index: 100;
+}
+.service_router{
+  margin-top: 100px;
+  width: 250px;
+  height: 75px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 2px solid white;
+  color: white;
+  outline: none;
+  background: none;
+  transition: 0.5s ease;
+}
+.service_router:hover{
+  font-size: 25px;
+  border: 5px solid white;
+  background-color: rgba(255, 255, 255, 0.313);
+  font-weight: 700;
+  backdrop-filter: blur(30px);
+}
+@media (max-width : 700px){
+  .App{
+    width: 41rem;
+  }
+  .footer_c{
+    margin-top: -300px;
   }
 }

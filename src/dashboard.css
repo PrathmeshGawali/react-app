@@ -1,0 +1,470 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.dashboard_wrapper{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 100%;
+    height: 110vh;
+    background-color: rgb(255, 253, 208);
+    backdrop-filter: blur(40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img{
+    width: 100%;
+    height: 50%;
+    background-color: black;
+  }
+
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    background-color: blue;
+    height: 90vh;
+    border-radius: 30px;
+}
+@media (max-width : 800px){
+    .dashboard_wrapper{
+        width: 50rem;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+}
+.navigation{
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    background-color: rgba(255,255,255,0.75);
+    height: 100%;
+    border-radius: 30px 0px 0px 30px;
+}
+.navigation .AHEN {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 50px;
+    transition: 4s ease;
+}
+
+.navigation .AHEN > span {
+    text-shadow: 0 0 0 ;
+    transition: 0.3s ease;
+  }
+.navigation .AHEN > span:hover{
+    text-shadow: 0 0 20px ;
+    color: rgb(2, 36, 171);
+    font-size: 60px;
+  }
+.functions{
+    margin-left: 10%;
+    margin-top: 50%;
+    padding-bottom: 30px;
+  }
+.each{
+    opacity: 75%;
+    margin-top: 20px;
+    font-size: 130%;
+    margin-bottom: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    transition: 0.3s ease;
+}
+.profile{
+    opacity: 100%;
+    outline: 2px solid rgba(57, 55, 55, 0.35);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 175px;
+    margin-left: -30px;
+    height:175px;
+    border-radius: 10%;
+    background-color: white;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile .CgProfile{
+    font-size: 60px;
+    padding-bottom: 5px;
+}
+.profile h3{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.profile p{
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: red;
+
+}
+.profile p:hover{
+    color: rgb(135, 1, 1);
+    outline: 1px solid rgba(135, 1, 1, 0.785);
+}
+.each:hover{
+    
+    opacity: 100%;
+    font-size: 150%;
+}
+.each p{
+    padding-left: 5px;
+    margin-top: -2px;
+}
+.business{
+    width: 60%;
+    background-color: rgba(255,255,255,0.85);
+    height: 100%;
+}
+.summary{
+    border-radius: 0px 30px 30px 0px;
+    width: 25%;
+    background-color: rgba(255,255,255,0.9);
+    height: 100%;
+}
+.summary h1{
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(51, 41, 86);
+    font-weight: 800;
+}
+.balance{
+    margin-top: 50px;
+    margin-left: 15px;
+    background-color: white;
+    width: 250px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    justify-content: center;
+    align-items: center;
+}
+.balance p{
+    font-weight: 900;
+    color: rgba(46, 46, 46, 0.75);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    opacity: 100%;
+    font-size: 15px;
+    padding-bottom: 5px;
+    margin-top: -15px;
+}
+.balance h2{
+    text-shadow: 3px 3px 3px rgba(46, 46, 46, 0.4);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    margin-top: 5px;
+    font-size: 30px;
+}
+.balance button{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: red;
+    border-radius: 20px;
+    margin-left: 250px;
+    margin-top: -55px;
+}
+.balance button:hover{
+    background-color: white;
+    color: red;
+    outline : 2px solid red; 
+}
+.activity{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 85%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.activity_s{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.activity_s h4{
+    font-weight: 800;
+    opacity: 55%;
+}
+.eachactivity{
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 10px 5px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.eachactivity button{
+    font-size: 15px;
+    padding-top: 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgba(0, 40, 185, 0.8);
+}
+.eachtext{
+    padding-left: 0px;
+}
+.eachtext h3{
+    font-size: 15px;
+}
+.eachtext p{
+    font-weight: 700;
+    opacity: 70%;
+}
+.eachactivity h2{
+    font-size: 15px;
+    font-weight: 900;
+}
+.functionalities{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f_button{
+    height: 150px;
+    opacity: 85%;
+    border-radius: 10px;
+    border: none;
+    background: none;
+    margin: 10px;
+    color: rgb(43, 127, 136);
+    background-color: rgba(99, 240, 250, 0.328);
+    font-size: 50px;
+    width: 40%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.f_button:hover,
+.f_button:focus{
+    opacity: 100%;
+}
+.f_button h3{
+    font-size: 17px;
+    color: black;
+}
+.f_button h4{
+    color: rgb(77, 77, 77);
+    padding: 5px;
+    font-size: 12px;
+}
+.Title{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.Title h2{
+    padding-left: 10px;
+    font-size: 50px;
+    color: rgb(51, 41, 86);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Title button{
+    font-size: 20px;
+    width: 45px;
+    color: rgb(51, 41, 86);
+    border-radius: 10px;
+    height: 45px;
+    border: none;
+    outline: none;
+    margin-right: 15px;
+}
+.Title button:hover{
+    background-color: rgb(51, 41, 86);
+    color: white;
+    font-weight: 500;
+}
+.panels{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+.eachpanel{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    background-color: rgba(22, 22, 153,0.76);
+    width: 200px;
+    font-size: 50px;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 15px;
+    display: flex;
+    color: rgba(139, 170, 255, 0.699);
+}
+.eachpanel h3{
+    color: white;
+    font-size: 17px;
+}
+.eachpanel h5{
+    color: white;
+    font-size: 12px;
+    opacity: 80%;
+}
+.marketplace{
+    padding-left: 25px;
+    padding-bottom: 15px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(51, 41, 86);
+}
+.analyse{
+    width: 100%;
+}
+.analytics{
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    width: 100%;
+    background: none;
+}
+.analytics{
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.analytics1{
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    font-family: Helvetica, sans-serif;
+
+}
+.analytics1 h3{
+    width: 70%;
+    color: rgb(31, 31, 31);
+    padding: 5px;
+}
+.analytics1 h5{
+    width: 70%;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: rgb(71, 71, 71);
+}
+.analytics1 button{
+    width: 80px;
+    border-radius: 40px;
+    outline: 2px solid rgba(22, 22, 153,0.7);
+    color: rgb(22, 22, 153);
+    height: 80px;
+    border: none;
+}
+.analytics1 button:hover{
+    outline: 3px solid rgba(22, 22, 153,1);
+    font-weight: 500;
+}
+.analytics2{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+    background-color: white;
+    height: 270px;
+    margin-right: 30px;
+    color: rgba(255, 0, 0, 0.725);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    border-radius: 10px;
+    font-size: 120px;
+}
+.analytics2 h5{
+    font-size: 15px;
+    padding-top: 20px;
+    color: rgb(22, 22, 153);
+}
+.analytics2 h2{
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(55, 55, 55);
+}
+.analytics2 p{
+    font-size: 15px;
+    color: rgb(137, 137, 137);
+    padding-bottom: 15px;
+}
+.recent{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    color: rgb(51, 41, 86);
+}
+.recent h5{
+    font-size: 15px;
+    color: rgb(67, 56, 106);
+}
+.recentlogs{
+    font-family: Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.472);
+    border-radius: 10px;
+    margin-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    display: flex;
+    color: rgb(116, 116, 116);
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.recentlogs h5{
+    width: 125px;
+    display: flex;
+    justify-content: left;
+}

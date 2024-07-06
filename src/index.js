@@ -1,13 +1,59 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import './phone.css';
+import DashBoard from './Dashboard.js';
+import App from './App.js';
+import SignIn from "./SignIn.js"
+import SignUp from "./SignUp.js"
 import reportWebVitals from './reportWebVitals';
+import Licence from "./License.js"
+import Service from"./Service.js"
+import Session from "./Session.js"
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import "./index.css";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "App",
+    element: <App />,
+  },
+  {
+    path: "Service",
+    element: <Service />,
+  },
+  {
+    path: "Session",
+    element: <Session />,
+  },
+  {
+    path: "Licence",
+    element: <Licence />,
+  },
+  {
+    path: "SignIn",
+    element: <SignIn />,
+  },
+  {
+    path: "SignUp",
+    element: <SignUp />,
+  },
+  {
+    path: "DashBoard",
+    element: <DashBoard />,
+  }
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <  RouterProvider router={router}/>
   </React.StrictMode>
 );
 
